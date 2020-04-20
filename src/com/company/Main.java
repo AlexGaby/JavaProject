@@ -3,11 +3,22 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        //Exercitiul 1
-        System.out.println("Hello world");
-        System.out.println("Numele meu este Alexandru");
 
-        //Exercitiul 2
+        printMyName();
+        printSum();
+        printHi();
+        printOp();
+    }
+
+
+    public static void printMyName(){
+        System.out.println("Hello world");
+        System.out.println("Hello \n Alexandru");
+
+    }
+
+
+    public static void printSum(){
         int a,b;
         a = 5;
         b = 10;
@@ -15,7 +26,9 @@ public class Main {
         System.out.println();
         System.out.println("Suma numerelor 5 si 10 este: "+sum);
 
-        //Exercitiul 3
+    }
+
+    public static void printHi(){
         double c,d;
         c = 10;
         d = 3;
@@ -23,12 +36,18 @@ public class Main {
         System.out.println();
         System.out.println("Rezultatul impartirii numarului 10 la 3 este: " +rez);
 
-        //Exercitiul 4
+    }
+    public static void printOp(){
         System.out.println();
         System.out.println(-5+8*6);
         System.out.println((55+9) % 9);
-        System.out.println(20+-3*5/8);
+        float e, f, g, h;
+        e=20;
+        f=-3;
+        g=5;
+        h=8;
+        float rezultat = ((e + (f * g) / h));
+        System.out.println(+rezultat);
         System.out.println (5+15/3*2-8%3);
-
     }
 }
