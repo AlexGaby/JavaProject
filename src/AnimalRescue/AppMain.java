@@ -1,4 +1,4 @@
-package AnimalRescue;
+/* package AnimalRescue;
 
 public class AppMain {
     public static void main (String[] args) {
@@ -33,8 +33,6 @@ public class AppMain {
         System.out.println();
         System.out.println(recr.name);
 
-
-
-
     }
 }
+ */
