@@ -4,22 +4,40 @@ public class Main {
 
     public static void main(String[] args) {
 
-        printMyName();
-        printSum();
-        printHi();
-        printOp();
-        System.out.println("Rezultatul adunarii este: " + adunare(5, 3));
-        System.out.println("Rezultatul scaderii este: " + scadere(5, 3));
-        System.out.println("Rezultatul inmultirii este: " + inmultire(5, 3));
-        System.out.println("Rezultatul impartirii este: " + impartire(5, 3));
-        System.out.println();
-        printJava();
+
+        Calculator calc = new Calculator();
+        System.out.println("Rezultatul adunarii este: " + calc.adunare(5, 3));
+        System.out.println("Rezultatul scaderii este: " + calc.scadere(5, 3));
+        System.out.println("Rezultatul inmultirii este: " + calc.inmultire(5, 3));
+        System.out.println("Rezultatul impartirii este: " + calc.impartire(5, 3));
+
+        
+        LogicalOp op = new LogicalOp();
+        int biggest = op.checkBiggerNumber(7,9);
+        System.out.println("The bigger number is: " + biggest);
+        String text = "FastTrackIT";
+        System.out.println(op.checkText(text));
+        System.out.println(op.checkTextNumber("FastTrackIT",3));
+        System.out.println(op.checkSnow(7));
+        System.out.println(op.multipleChecks(4));
+        System.out.println(op.switchCase(5));
+        System.out.println(op.isNumberEven(8));
+        System.out.println(op.isEligibleToVote(18));
+        System.out.println(op.threeNumbers(8,9,6));
+
+
+
+         /* printJava();
         printModel();
         System.out.println("Media numerelor este: " + mediaNumerelor(5, 3, 8));
         System.out.println("Restul impartirii este: " + printRest(9, 4));
         System.out.println("Temperatura in grade celsius este: " + temperatura(45));
         System.out.println("Distanta in metrii este: " + distanta(65));
         System.out.println("Viteza este: " + viteza(2, 20, 57, 100));
+        printMyName();
+        printSum();
+        printHi();
+        printOp();*/
 
 
     }
@@ -64,40 +82,6 @@ public class Main {
         float rezultat = ((e + (f * g) / h));
         System.out.println(+rezultat);
         System.out.println(5 + 15 / 3 * 2 - 8 % 3);
-    }
-
-    //Exercitiul 2
-
-    public static int adunare(int primulNumar, int alDoileaNumar) {
-
-        int rezultat2 = primulNumar + alDoileaNumar;
-
-        return rezultat2;
-
-    }
-
-    public static int scadere(int primulNumar, int alDoileaNumar) {
-
-        int rezultat3 = primulNumar - alDoileaNumar;
-
-        return rezultat3;
-
-    }
-
-    public static int inmultire(int primulNumar, int alDoileaNumar) {
-
-        int rezultat4 = primulNumar * alDoileaNumar;
-
-        return rezultat4;
-
-    }
-
-    public static double impartire(double primulNumar, double alDoileaNumar) {
-
-        double rezultat5 = primulNumar / alDoileaNumar;
-
-        return rezultat5;
-
     }
 
     // Exercitiul 3
