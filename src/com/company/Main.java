@@ -22,6 +22,35 @@ public class Main {
         op.medienr(99);
         System.out.println("Ex 9");
         op.star("*");
+        System.out.println();
+        System.out.println("Ex 1");
+        op.displayHundred(95);
+        System.out.println("Ex 2");
+        op.displayHundred2(-98);
+
+        System.out.println("Ex 3");
+        op.displayNumaratoare(8, 15);
+        System.out.println("Ex 4");
+        op.comparing3(5, 8);
+
+        System.out.println("Ex 5");
+        op.par2();
+
+        System.out.println("Ex 6");
+        op.impar2();
+
+        System.out.println("Ex 7");
+        op.average2();
+
+        System.out.println("Ex 8");
+        op.seven();
+
+        System.out.println("Ex 9");
+        op.fibonacci();
+        System.out.println("Ex 10");
+        op.CozaLozaWoza();
+
+
 
          /* Calculator calc = new Calculator();
         System.out.println("Rezultatul adunarii este: " + calc.adunare(5, 3));

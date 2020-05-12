@@ -197,4 +197,179 @@ public class LogicalOp {
             }
         }
 
+
+
+        //Execitiul 1 while
+
+    public void displayHundred(int p) {
+
+        while (p <= 100) {
+            System.out.println(p);
+            p++;
+        }
+
+    }
+    //Execitiul 2 while
+
+    public void displayHundred2(int p) {
+
+        while (p >= -100) {
+            System.out.println(p);
+            p--;
+        }
+
+    }
+    //Execitiul 3 while
+
+    public void displayNumaratoare (int numarunu, int numardoi) {
+
+        while (numarunu <=numardoi) {
+            System.out.println(numarunu);
+            numarunu++;
+        }
+
+    }
+
+         //Exercitiul 4 while
+    public void comparing3(int number, int numbertwo) {
+
+        if (number < numbertwo) {
+            while(number<=numbertwo) {
+                System.out.println(number);
+                number ++;
+            }
+
+        } else if (numbertwo < number) {
+            while(numbertwo<=number) {
+                System.out.println(number);
+                number++;
+            }
+
+        }
+
+    }
+
+
+    //Exercitiul 5 while
+    public void par2() {
+        int n=1;
+        while (n<=100) {
+            if (n % 2 == 0)
+                System.out.println(n);
+            n++;
+        }
+    }
+
+    //Exercitiul 6 while
+    public void impar2() {
+        int n=1;
+        while (n<=100) {
+            if (n % 2 != 0)
+                System.out.println(n);
+            n++;
+        }
+    }
+
+    //Exercitiul 7 while
+
+    public void average2() {
+        int n=111;
+        float sum = 0;
+        float average=0;
+        int count = 0;
+
+        while(n<=8899) {
+            sum = sum + n;
+            n++;
+            count ++;
+            average = sum/count;
+        }
+        System.out.println(sum);
+        System.out.println(average);
+
+    }
+    //Exercitiul 8 while
+
+    public void seven() {
+       int k=7;
+        int l=70;
+
+        float sum = 0;
+        float average=0;
+        int count = 0;
+
+        while(k<=l) {
+            sum = sum + k;
+            k++;
+            count ++;
+            average = sum/count;
+        }
+        System.out.println(average);
+
+    }
+
+
+    // Exercitiul 9 Fibonacci
+
+    public void fibonacci() {
+        int n=20;
+        int first = 0,next = 1;
+        int i = 0;
+        System.out.print(first+" "+next);
+        while (i<=n)
+        {
+            int sum = first + next;
+            first = next;
+            next = sum;
+            System.out.print(" " + sum);
+            i++;
+        }
+    }
+
+
+
+    //Exercitiul 10 while
+
+    public void CozaLozaWoza () {
+        int nr = 1;
+        while (nr <= 110)
+        {
+            if (nr%11==1) // pt afisarea a 11 numere pe linie
+            {
+                System.out.println("");
+            }
+            if (nr % 3 == 0) {
+                System.out.print("Coza ");
+            }
+            else
+            if (nr % 5 == 0) {
+                System.out.print("Loza ");
+            }
+            else
+            if (nr % 7 == 0) {
+                System.out.print("Woza ");
+            }
+            else
+            if (nr % 3 == 0 & nr % 5 == 0) {
+                System.out.print("CozaLoza ");
+            }
+            else
+            if(nr%3==0 & nr%7==0){
+                System.out.print("CozaWoza ");
+            }
+            else
+            if(nr%5==0 & nr%7==0){
+                System.out.print("WozaLoza ");
+            }
+            else
+            if(nr%3==0 & nr%5==0 && nr%7==0){
+                System.out.print("CozaLozaWoza ");
+            }
+            else
+                System.out.print(nr+" ");
+            nr++;
+
+        }
+    }
+
 }
