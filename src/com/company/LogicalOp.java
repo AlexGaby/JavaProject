@@ -115,5 +115,86 @@ public class LogicalOp {
             return numberTwo;
         return numberThree;
     }
+    //Exercitiul 1 for
+    public void operatii (int number){
+        for (int i = number; i <= 100; i++) {
+            System.out.println(i);
+        }
+
+    }
+    //Exercitiul 2 for
+    public void operatii2 (int number) {
+        for (int i = number; i >= -100; i--) {
+            System.out.println(i);
+        }
+    }
+    //Exercitiul 3 for
+    public void numaratoare (int number,int number2) {
+        for (int i = number; i <= number2; i++) {
+            System.out.println(i);
+        }
+    }
+    //Exercitiul 4 for
+    public void numaratoare2 (int number,int number2) {
+       if (number < number2) {
+           for (int i = number; i <= number2; i++)
+            System.out.println(i);
+        }
+       else
+           if(number2 < number)
+        {
+            for (int i = number2; i <= number; i++)
+            System.out.println(i);
+        }
+    }
+    //Exercitiul 5 for
+    public void nrpar () {
+           for ( int i = 1; i <= 100; i++){
+               if (i%2==0)
+            System.out.println(i);
+        }
+    }
+    //Exercitiul 6 for
+    public void nrimpar () {
+        for ( int i = 1; i <= 100; i++){
+            if (i%2!=0)
+                System.out.println(i);
+        }
+    }
+    //Exercitiul 7 for
+    public void adunare (int number) {
+        int sum =0;
+        for ( int i=number ; i <= 100; i++) {
+            sum = sum + i;
+        }
+                System.out.println(sum);
+
+    }
+    //Exercitiul 8 for
+    public void medienr (int number) {
+        float sum = 0;
+        int contor = 0;
+        float media = 0;
+        for (int i = number; i <= 100; i++) {
+            sum = sum + i;
+            contor++;
+            media = sum / contor;
+        }
+        System.out.println(media);
+
+    }
+
+        //Exercitiul 9 for
+        public void star (String n){
+            n = "*";
+            for (int i = 7; i >= 1; i--) {
+                System.out.println();
+                {
+                    for (int j = 1; j <= 7; j++)
+                        System.out.print("*");
+
+                }
+            }
+        }
 
 }

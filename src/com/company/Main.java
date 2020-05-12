@@ -4,14 +4,32 @@ public class Main {
 
     public static void main(String[] args) {
 
+        LogicalOp op = new LogicalOp();
+        op.operatii(88);
+        System.out.println("Ex 2");
+        op.operatii2(-78);
+        System.out.println("Ex 3");
+        op.numaratoare(1, 6);
+        System.out.println("Ex 4");
+        op.numaratoare2(9,5);
+        System.out.println("Ex 5");
+        op.nrpar();
+        System.out.println("Ex 6");
+        op.nrimpar();
+        System.out.println("Ex 7");
+        op.adunare(94);
+        System.out.println("Ex 8");
+        op.medienr(99);
+        System.out.println("Ex 9");
+        op.star("*");
 
-        Calculator calc = new Calculator();
+         /* Calculator calc = new Calculator();
         System.out.println("Rezultatul adunarii este: " + calc.adunare(5, 3));
         System.out.println("Rezultatul scaderii este: " + calc.scadere(5, 3));
         System.out.println("Rezultatul inmultirii este: " + calc.inmultire(5, 3));
         System.out.println("Rezultatul impartirii este: " + calc.impartire(5, 3));
 
-        
+
         LogicalOp op = new LogicalOp();
         int biggest = op.checkBiggerNumber(7,9);
         System.out.println("The bigger number is: " + biggest);
@@ -27,7 +45,8 @@ public class Main {
 
 
 
-         /* printJava();
+
+         printJava();
         printModel();
         System.out.println("Media numerelor este: " + mediaNumerelor(5, 3, 8));
         System.out.println("Restul impartirii este: " + printRest(9, 4));
