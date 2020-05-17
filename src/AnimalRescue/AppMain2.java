@@ -56,6 +56,55 @@ public class AppMain2 {
 
         medical.setSpecialization("veterinar");
         System.out.println("Specializarea medicului este: " + medical.getSpecialization());
+
+
+        Cat pixel = new Cat();
+        pixel.setName("Pixel");
+        System.out.println(pixel.getName());
+        pixel.eat();
+        pixel.run();
+
+        Dog catel=new Dog();
+        catel.setName("Fred");
+        System.out.println(catel.getName());
+        catel.eat();
+        catel.run();
+        catel.sleep();
+
+
+        CatFood foodc = new CatFood();
+        foodc.dryFood();
+        foodc.wetFood();
+
+        DogFood foodd = new DogFood();
+        foodd.dryFood();
+        foodd.wetFood();
+
+        Girl casa = new Girl();
+        casa.houseType();
+        casa.anotherPets();
+
+        Boy apart = new Boy();
+        apart.tipDeLocuinta();
+        apart.anotherPets();
+
+        System.out.println("\nDoctorul are urmatorele atributii: ");
+        Doctor doc = new Doctor();
+        doc.consult();
+        doc.medicalOperation();
+        doc.tips();
+        doc.animalsVaccination();
+
+        System.out.println("\nAsistenta are urmatorele atributii: ");
+        Nurse nur = new Nurse();
+        nur.consult();
+        nur.medicalOperation();
+        nur.tips();
+        nur.animalsVaccination();
+
+
+
+
     }
 
 }

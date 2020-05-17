@@ -47,8 +47,9 @@ public class Main {
 
         System.out.println("Ex 9");
         op.fibonacci();
+        System.out.println();
         System.out.println("Ex 10");
-        op.CozaLozaWoza();
+        op.wozaCozaLoza();
 
 
 

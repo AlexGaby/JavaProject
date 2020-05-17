@@ -282,8 +282,8 @@ public class LogicalOp {
             sum = sum + n;
             n++;
             count ++;
-            average = sum/count;
         }
+        average = sum/count;
         System.out.println(sum);
         System.out.println(average);
 
@@ -299,11 +299,12 @@ public class LogicalOp {
         int count = 0;
 
         while(k<=l) {
+            if (k%7 == 0)
             sum = sum + k;
             k++;
             count ++;
-            average = sum/count;
         }
+        average = sum/count;
         System.out.println(average);
 
     }
@@ -330,47 +331,58 @@ public class LogicalOp {
 
     //Exercitiul 10 while
 
-    public void CozaLozaWoza () {
-        int nr = 1;
-        while (nr <= 110)
-        {
-            if (nr%11==1) // pt afisarea a 11 numere pe linie
-            {
-                System.out.println("");
-            }
-            if (nr % 3 == 0) {
-                System.out.print("Coza ");
-            }
-            else
-            if (nr % 5 == 0) {
-                System.out.print("Loza ");
-            }
-            else
-            if (nr % 7 == 0) {
-                System.out.print("Woza ");
-            }
-            else
-            if (nr % 3 == 0 & nr % 5 == 0) {
-                System.out.print("CozaLoza ");
-            }
-            else
-            if(nr%3==0 & nr%7==0){
-                System.out.print("CozaWoza ");
-            }
-            else
-            if(nr%5==0 & nr%7==0){
-                System.out.print("WozaLoza ");
-            }
-            else
-            if(nr%3==0 & nr%5==0 && nr%7==0){
+    public void wozaCozaLoza() {
+
+        int i = 1;
+
+        while (i <= 110) {
+
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+
                 System.out.print("CozaLozaWoza ");
+
+            } else if (i % 5 == 0 && i % 7 == 0) {
+
+                System.out.print("WozaLoza ");
+
+            } else if (i % 3 == 0 && i % 7 == 0) {
+
+                System.out.print("CozaWoza ");
+
+            } else if (i % 3 == 0 && i % 5 == 0) {
+
+                System.out.print("CozaLoza ");
+
+            } else if (i % 7 == 0) {
+
+                System.out.print("Woza ");
+
+            } else if (i % 5 == 0) {
+
+                System.out.print("Loza ");
+
+            } else if (i % 3 == 0) {
+
+                System.out.print("Coza ");
+
+            } else {
+
+                System.out.print(i + " ");
+
             }
-            else
-                System.out.print(nr+" ");
-            nr++;
+
+            if (i % 11 == 0) {
+
+                System.out.println();
+
+            }
+
+            i++;
 
         }
+
     }
+
     public void write() {
         int array[] = new int[100];
         for (int i = 1; i <= 100; i++) {
