@@ -52,14 +52,39 @@ public class Main {
 
 
 
-         /* Calculator calc = new Calculator();
-        System.out.println("Rezultatul adunarii este: " + calc.adunare(5, 3));
-        System.out.println("Rezultatul scaderii este: " + calc.scadere(5, 3));
-        System.out.println("Rezultatul inmultirii este: " + calc.inmultire(5, 3));
-        System.out.println("Rezultatul impartirii este: " + calc.impartire(5, 3));
+        Calculator calc = new Calculator();
+        System.out.println();
+        System.out.println("Rezultatul adunarii este: " + calc.add(5, 3));
+        System.out.println("Rezultatul adunarii cu trei variabile de tip int este: " + calc.add(5,2, 7));
+        System.out.println("Rezultatul adunarii varianta trei este:" + calc.add(3.5, 12));
+
+        System.out.println("Rezultatul scaderii este: " + calc.subtraction(5, 3));
+        System.out.println("Rezultatul scaderii (metoda2) este: "+calc.subtraction(15,4,2));
+        System.out.println("Rezultatul scaderii (metoda3) este: "+calc.subtraction(22.5,14.5,12));
+
+        System.out.println("Rezultatul inmultirii este: " + calc.multiplication(5, 3));
+        System.out.println("Rezultatul inmultirii(metoda2) este:"+calc.multiplication(4,4.4));
+        System.out.println("Rezultatul inmultirii(metoda3) este: "+calc.multiplication(10, 22.3));
+
+        System.out.println("Rezultatul impartirii este: " + calc.division(5, 3));
+        System.out.println("Rezultatul impartirii(metoda2) este: " +calc.division(10.5, 5));
+        System.out.println("Rezultatul impartirii(metoda3) este:" +calc.division(25,4.5));
 
 
-        LogicalOp op = new LogicalOp();
+        op.write();
+        op.evenNumber();
+        op.arraySum();
+        op.checkString();
+        op.checkNumber();
+        op.grille();
+        System.out.println();
+        op.displayWithoutNumber();
+        op.secondSmallerNumber();
+        op.copyArray();
+
+
+/*
+
         int biggest = op.checkBiggerNumber(7,9);
         System.out.println("The bigger number is: " + biggest);
         String text = "FastTrackIT";

@@ -1,34 +1,78 @@
 package com.company;
 
-public class Calculator {public int adunare(int primulNumar, int alDoileaNumar) {
+public class Calculator {
 
-    int rezultat2 = primulNumar + alDoileaNumar;
 
-    return rezultat2;
+    public int add(int primulNumar, int alDoileaNumar) {
+
+        return primulNumar + alDoileaNumar;
 
 }
+    public int add(int primulNumar, int alDoileaNumar, int alTreileaNumar) {
 
-    public int scadere(int primulNumar, int alDoileaNumar) {
+        return primulNumar + alDoileaNumar+alTreileaNumar;
 
-        int rezultat3 = primulNumar - alDoileaNumar;
+    }
+    public float add(double primulNumar, int alDorileaNumar){
+        return (float) (primulNumar + alDorileaNumar);
+    }
 
-        return rezultat3;
+
+
+
+
+    public int subtraction(int primulNumar, int alDoileaNumar) {
+
+        return primulNumar - alDoileaNumar;
+    }
+
+
+    public int subtraction(int primulNumar, int alDoileaNumar, int alTreileaNumar) {
+
+        return primulNumar - alDoileaNumar - alTreileaNumar;
+    }
+
+    public double subtraction(double primulNumar, double alDoileaNumar, int alTreileaNumar) {
+
+        return primulNumar - alDoileaNumar - alTreileaNumar;
+    }
+
+
+
+
+    public int multiplication(int primulNumar, int alDoileaNumar) {
+
+        return primulNumar * alDoileaNumar;
 
     }
 
-    public int inmultire(int primulNumar, int alDoileaNumar) {
+    public double multiplication(int primulNumar, double alDoileaNumar) {
 
-        int rezultat4 = primulNumar * alDoileaNumar;
-
-        return rezultat4;
+        return primulNumar * alDoileaNumar;
 
     }
 
-    public double impartire(double primulNumar, double alDoileaNumar) {
+    public float multiplication(float primulNumar, double alDoileaNumar) {
 
-        double rezultat5 = primulNumar / alDoileaNumar;
+        return (float) (primulNumar * alDoileaNumar);
 
-        return rezultat5;
+    }
+
+
+    public double division(double primulNumar, double alDoileaNumar) {
+
+        return primulNumar / alDoileaNumar;
+
+    }
+
+    public int division(int primulNumar, double alDoileaNumar) {
+
+        return (int) (primulNumar / alDoileaNumar);
+
+    }
+    public float division(float primulNumar, double alDoileaNumar) {
+
+        return (float) (primulNumar / alDoileaNumar);
 
     }
 }
