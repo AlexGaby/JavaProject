@@ -490,5 +490,44 @@ public class LogicalOp {
                 System.out.print(b[i] + " ");
         }
 
+        //Tema optional
+
+    public static void addElement()
+    {
+        int arr[] = {8, 2, 6, 4, 5, 6, 7, 12, 9, 10};
+        int x = 20;
+        int[] newarr;
+        newarr = new int[arr.length + 1];
+        newarr=arr;
+        int i;
+
+        System.out.println("\n\nValorile primului array sunt: ");
+        for (i=0; i<arr.length; i++)
+            System.out.print(arr[i] + " ");
+
+
+        newarr[5] = x;
+
+        System.out.println("\n\nValorile celui de-al doilea array sunt: ");
+        for (i=0; i<newarr.length; i++)
+            System.out.print(newarr[i] + " ");
+
+    }
+
+    public static void minMax(){
+
+        int arr[] = {8, 2, 6, 25, 5, 6, 20, 12, 9, 10};
+        int min = arr[0];
+        int max = arr[0];
+        for (int i=0; i<arr.length; i++){
+            if(arr[i]<=min)
+                min=arr[i];
+            if(arr[i]>=max)
+                max=arr[i];
+        }
+        System.out.print("\n Minimul este: "+ min);
+        System.out.print("\n Maximul este: "+ max);
+    }
+
     }
 

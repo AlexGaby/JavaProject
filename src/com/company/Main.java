@@ -82,6 +82,8 @@ public class Main {
         op.displayWithoutNumber();
         op.secondSmallerNumber();
         op.copyArray();
+        op.addElement();
+        op.minMax();
 
 
 /*
@@ -216,4 +218,6 @@ public class Main {
         return rezultat;
 
     }
+
+
 }
