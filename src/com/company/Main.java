@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         LogicalOp op = new LogicalOp();
-        op.operatii(88);
+        /* op.operatii(88);
         System.out.println("Ex 2");
         op.operatii2(-78);
         System.out.println("Ex 3");
@@ -71,8 +71,12 @@ public class Main {
         System.out.println("Rezultatul impartirii(metoda2) este: " +calc.division(10.5, 5));
         System.out.println("Rezultatul impartirii(metoda3) este:" +calc.division(25,4.5));
 
+*/
+        int[] myArray = op.write();
+        op.printArray(myArray);
 
-        op.write();
+        int[] evenArray= op.evenNumber();
+
         op.evenNumber();
         op.arraySum();
         op.checkString();
@@ -84,6 +88,8 @@ public class Main {
         op.copyArray();
         op.addElement();
         op.minMax();
+
+
 
 
 /*

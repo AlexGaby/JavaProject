@@ -383,19 +383,26 @@ public class LogicalOp {
 
     }
 
-    public void write() {
-        int array[] = new int[100];
+    public int[] write() {
+        int[] array = new int[100];
         for (int i = 1; i <= 100; i++) {
-            System.out.println(i);
+            array[i - 1] = i;
         }
+        return array;
     }
 
-        public void evenNumber() {
-            int array[] = new int[100];
-            for (int i = 1; i <= 100; i++)
-                if (i % 2 == 0)
-                    System.out.println(i);
 
+
+        public int[] evenNumber(int[] evenArray) {
+        int j=0;
+
+            for (int i = 1; i <= 100; i++) {
+                if (i % 2 == 0) {
+                    evenArray[j] = i;
+                    j++;
+                }
+            }
+            return evenArray;
         }
 
         public void arraySum() {
@@ -529,5 +536,10 @@ public class LogicalOp {
         System.out.print("\n Maximul este: "+ max);
     }
 
+    public void printArray(int[] array){
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i]);
+        }
+    }
     }
 
