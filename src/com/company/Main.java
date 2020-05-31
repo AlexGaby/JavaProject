@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -71,13 +74,14 @@ public class Main {
         System.out.println("Rezultatul impartirii(metoda2) este: " +calc.division(10.5, 5));
         System.out.println("Rezultatul impartirii(metoda3) este:" +calc.division(25,4.5));
 
-*/
+
         int[] myArray = op.write();
         op.printArray(myArray);
 
-        int[] evenArray= op.evenNumber();
+        int[] evenArrays = op.evenNumber (new int[50]);
+        op.printArray(evenArrays);
 
-        op.evenNumber();
+
         op.arraySum();
         op.checkString();
         op.checkNumber();
@@ -88,8 +92,29 @@ public class Main {
         op.copyArray();
         op.addElement();
         op.minMax();
+*/
 
 
+        List<Integer> myList = new ArrayList();
+        myList.add(1);
+        myList.add(2);
+        myList.add(7);
+        myList.add(4);
+
+        op.printList(myList);
+        op.addToList(myList, 5);
+        op.printListReverse(myList);
+        op.addFirst(myList,3);
+        op.printPosition(myList);
+        System.out.println("Max: " + op.maxNumber(myList));
+
+        List<String> myList2 = new ArrayList();
+        myList2.add("a");
+        myList2.add("b");
+        myList2.add("c");
+        myList2.add("d");
+
+        op.addString(myList2,4,"b");
 
 
 /*

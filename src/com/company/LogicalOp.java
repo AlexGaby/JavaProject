@@ -1,5 +1,9 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class LogicalOp {
 
 
@@ -541,5 +545,49 @@ public class LogicalOp {
             System.out.println(array[i]);
         }
     }
+
+
+    public void printList(List<Integer> list){
+        for (int x : list){
+            System.out.println(x);
+        }
     }
+
+    public void addToList(List<Integer> myList, int x){
+        myList.add(x);
+        System.out.println(myList);
+    }
+
+    public void printListReverse(List<Integer> mylist){
+        Collections.reverse(mylist);
+        System.out.println("Modified List: " + mylist);
+    }
+
+    public void addString(List<String> myList, int y, String z){
+        myList.add(y, z);
+        System.out.println(myList);
+    }
+
+    public void addFirst(List<Integer>myList, int x){
+       myList.add(0,x);
+       System.out.println(myList);
+    }
+
+    public void printPosition(List<Integer> list){
+        System.out.println("List: " + list);
+        for (int i = 0; i < list.size(); i++) {
+            int element = list.get(i);
+            System.out.println("Pe pozitia " + i + " valoarea este " + element);
+        }
+    }
+
+    public int maxNumber(List<Integer> list){
+        List<Integer> sortedlist = new ArrayList<>(list);
+        // sort list in natural order
+        Collections.sort(sortedlist);
+        // last element in the sorted list would be maximum
+        return sortedlist.get(sortedlist.size() - 1);
+    }
+}
+
 
