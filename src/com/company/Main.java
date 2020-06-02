@@ -98,11 +98,12 @@ public class Main {
         List<Integer> myList = new ArrayList();
         myList.add(1);
         myList.add(2);
-        myList.add(7);
+        myList.add(3);
         myList.add(4);
 
         op.printList(myList);
         op.addToList(myList, 5);
+        op.printlistfromy(myList,2);
         op.printListReverse(myList);
         op.addFirst(myList,3);
         op.printPosition(myList);

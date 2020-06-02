@@ -558,6 +558,13 @@ public class LogicalOp {
         System.out.println(myList);
     }
 
+    public void printlistfromy(List<Integer> myList, int y){
+
+        for (int i = y; i < myList.size(); i++){
+          System.out.println(myList.get(i));
+       }
+    }
+
     public void printListReverse(List<Integer> mylist){
         Collections.reverse(mylist);
         System.out.println("Modified List: " + mylist);
