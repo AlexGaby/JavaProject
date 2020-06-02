@@ -2,7 +2,7 @@ package AnimalRescue;
 
 public class Girl extends AnimalRescuer {
 
-    public void tipDeLocuinta () {
+    public void houseType () {
     System.out.println ("casa");
 }
 

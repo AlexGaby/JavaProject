@@ -78,9 +78,9 @@ public class Main {
         int[] myArray = op.write();
         op.printArray(myArray);
 
+
         int[] evenArrays = op.evenNumber (new int[50]);
         op.printArray(evenArrays);
-
 
         op.arraySum();
         op.checkString();
@@ -93,8 +93,6 @@ public class Main {
         op.addElement();
         op.minMax();
 */
-
-
         List<Integer> myList = new ArrayList();
         myList.add(1);
         myList.add(2);

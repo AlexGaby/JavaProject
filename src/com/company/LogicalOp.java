@@ -590,9 +590,7 @@ public class LogicalOp {
 
     public int maxNumber(List<Integer> list){
         List<Integer> sortedlist = new ArrayList<>(list);
-        // sort list in natural order
         Collections.sort(sortedlist);
-        // last element in the sorted list would be maximum
         return sortedlist.get(sortedlist.size() - 1);
     }
 }

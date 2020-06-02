@@ -2,7 +2,7 @@ package AnimalRescue;
 
 public class AppMain2 {
     public static void main(String[] args) {
-        Animal tigru = new Animal();
+        /* Animal tigru = new Animal();
         tigru.setName("tigru");
         System.out.println(tigru.getName());
 
@@ -101,7 +101,7 @@ public class AppMain2 {
         nur.medicalOperation();
         nur.tips();
         nur.animalsVaccination();
-
+*/
 
 
 
