@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class AnimalRescuer {
+public abstract class AnimalRescuer {
 
     public String name;
     public int moneyAvailable ;
@@ -21,15 +21,13 @@ public class AnimalRescuer {
         this.moneyAvailable = moneyAvailable;
     }
 
-    public void houseType () {
-        System.out.println ("casa sau apartamnet");
+
+
+    public abstract void houseType ();
+
+    public abstract void anotherPets ();
     }
 
-    public void anotherPets () {
-        System.out.println ("da sau nu");
-    }
-
-}
 
 
 

@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         LogicalOp op = new LogicalOp();
-        /* op.operatii(88);
+        /*   op.operatii(88);
         System.out.println("Ex 2");
         op.operatii2(-78);
         System.out.println("Ex 3");
@@ -92,7 +92,7 @@ public class Main {
         op.copyArray();
         op.addElement();
         op.minMax();
-*/
+
         List<Integer> myList = new ArrayList();
         myList.add(1);
         myList.add(2);
@@ -116,7 +116,7 @@ public class Main {
         op.addString(myList2,4,"b");
 
 
-/*
+
 
         int biggest = op.checkBiggerNumber(7,9);
         System.out.println("The bigger number is: " + biggest);
@@ -143,7 +143,7 @@ public class Main {
         printMyName();
         printSum();
         printHi();
-        printOp();*/
+        printOp();
 
 
     }
@@ -249,5 +249,9 @@ public class Main {
 
     }
 
-
+*/
+        Read read = new Read();
+        read.readNumber();
+        read.readNumberDouble();
+    }
 }
