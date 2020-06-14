@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.Scanner;
 
 public class Read {
@@ -24,5 +25,4 @@ public class Read {
             System.out.println("Problem with input detected");
         }
     }
-
 }

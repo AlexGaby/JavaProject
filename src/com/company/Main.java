@@ -1,8 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -62,9 +59,9 @@ public class Main {
         System.out.println("Rezultatul adunarii cu trei variabile de tip int este: " + calc.add(5,2, 7));
         System.out.println("Rezultatul adunarii varianta trei este:" + calc.add(3.5, 12));
 
-        System.out.println("Rezultatul scaderii este: " + calc.subtraction(5, 3));
-        System.out.println("Rezultatul scaderii (metoda2) este: "+calc.subtraction(15,4,2));
-        System.out.println("Rezultatul scaderii (metoda3) este: "+calc.subtraction(22.5,14.5,12));
+        System.out.println("Rezultatul scaderii este: " + calc.substraction(5, 3));
+        System.out.println("Rezultatul scaderii (metoda2) este: "+calc.substraction(15,4,2));
+        System.out.println("Rezultatul scaderii (metoda3) este: "+calc.substraction(22.5,14.5,12));
 
         System.out.println("Rezultatul inmultirii este: " + calc.multiplication(5, 3));
         System.out.println("Rezultatul inmultirii(metoda2) este:"+calc.multiplication(4,4.4));

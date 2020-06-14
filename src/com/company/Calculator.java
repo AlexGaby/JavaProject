@@ -21,18 +21,18 @@ public class Calculator {
 
 
 
-    public int subtraction(int primulNumar, int alDoileaNumar) {
+    public int substraction(int primulNumar, int alDoileaNumar) {
 
         return primulNumar - alDoileaNumar;
     }
 
 
-    public int subtraction(int primulNumar, int alDoileaNumar, int alTreileaNumar) {
+    public int substraction(int primulNumar, int alDoileaNumar, int alTreileaNumar) {
 
         return primulNumar - alDoileaNumar - alTreileaNumar;
     }
 
-    public double subtraction(double primulNumar, double alDoileaNumar, int alTreileaNumar) {
+    public double substraction(double primulNumar, double alDoileaNumar, int alTreileaNumar) {
 
         return primulNumar - alDoileaNumar - alTreileaNumar;
     }
